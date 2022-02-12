@@ -57,7 +57,7 @@ def load_env(fn):
 
 def with_env(source):
     """
-    A function decorated with @with_env that starts and environment during
+    A function decorated with @with_env that starts an environment during
     the execution of a function.
 
     Notes
@@ -78,6 +78,7 @@ def with_env(source):
     .. literalinclude:: ../../examples/short/with_env.py
 
     """
+
     def decorator(fn):
         _validate_and_modify_signature(fn)
 
